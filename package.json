@@ -1,0 +1,14 @@
+{
+  "name": "marketplace-customer-usage-meter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/marketplace_meter.ts",
+    "demo": "node --experimental-strip-types src/meter_demo.ts",
+    "test": "node --experimental-strip-types --test src/meter_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {"zod": "^3.24.0"},
+  "devDependencies": {"@types/node": "^22.0.0", "typescript": "^5.7.0"}
+}

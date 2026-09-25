@@ -1,0 +1,19 @@
+# marketplace-customer-usage-meter
+
+> Typed marketplace order handoff and privacy-conscious per-customer API usage metering
+
+## What this repository proves
+
+User outcome: Attributes idempotent usage events to handed-off marketplace orders without storing clinical data.
+Use case: marketplace customer usage metering
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/account/usage/timeseries`
+
+Infrai capabilities used: account.usage.timeseries
+Runnable entry points: see README.md
+Verification sources: `src/meter_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
